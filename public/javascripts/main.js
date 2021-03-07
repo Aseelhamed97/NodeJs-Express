@@ -59,9 +59,6 @@ function sendData(e) {
         }),
         method: "POST"
     }
-
-    console.log(fname);
-
     fetch('http://localhost:5000/formData', Params)
         .then(response => response.json())
         .then(data => {;
